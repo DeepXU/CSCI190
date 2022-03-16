@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Thu Mar 10 16:48:10 2022 as: nmap -sV -p- -oA midterm 192.168.1.136 -->
+<nmaprun scanner="nmap" args="nmap -sV -p- -oA midterm 192.168.1.136" start="1646948890" startstr="Thu Mar 10 16:48:10 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.136" addrtype="ipv4"/>
+<address addr="00:0C:29:63:DE:69" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1646948897" endtime="1646949123"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.136" addrtype="ipv4"/>
+<address addr="00:0C:29:63:DE:69" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65491">
+<extrareasons reason="reset" count="65491" proto="tcp" ports="1-20,23-79,81-134,136-138,140-444,446-1616,1618-3305,3307-3388,3390-3699,3701-4847,4849-5984,5986-7675,7677-8008,8010-8018,8021,8023-8026,8029-8030,8033-8079,8081-8180,8182-8281,8283-8382,8384-8442,8445-8483,8485-8584,8586-8685,8687-9199,9201-9299,9301-47000,47002-49151,49155-49156,49159-49178,49181-49182,49184-49207,49209-49258,49261-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ftp" product="Microsoft ftpd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:ftp_service</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ssh" product="OpenSSH" version="7.1" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.1</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Microsoft IIS httpd" version="7.5" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_server:7.5</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" product="Microsoft Windows Server 2008 R2 - 2012 microsoft-ds" ostype="Windows Server 2008 R2 - 2012" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="1617"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="java-rmi" product="Java RMI" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="mysql" product="MySQL" version="5.5.20-log" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:5.5.20-log</cpe></service></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" tunnel="ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3700"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="giop" product="CORBA naming service" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="4848"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="appserv-http" servicefp="SF-Port4848-TCP:V=7.92%T=SSL%I=7%D=3/10%Time=622A7268%P=x86_64-pc-linux-gnu%r(HTTPOptions,9E,&quot;HTTP/1\.1\x20405\x20OPTIONS\x20method\x20is\x20not\x20allowed\r\nAllow:\x20GET,\x20POST,\x20HEAD,\x20DELETE,\x20PUT\r\nDate:\x20Fri,\x2011\x20Mar\x202022\x2000:49:28\x20GMT\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n&quot;);" tunnel="ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="7676"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="java-message-service" product="Java Message Service" version="301" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ajp13" product="Apache Jserv" extrainfo="Protocol v1.3" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="8019"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="qbdb" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8020"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service></port>
+<port protocol="tcp" portid="8022"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Apache Tomcat/Coyote JSP engine" version="1.1" method="probed" conf="10"><cpe>cpe:/a:apache:coyote_http_connector:1.1</cpe></service></port>
+<port protocol="tcp" portid="8027"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="papachi-p2p-srv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8028"><state state="open" reason="syn-ack" reason_ttl="128"/></port>
+<port protocol="tcp" portid="8031"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="unknown" tunnel="ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8032"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="desktop-central" product="ManageEngine Desktop Central DesktopCentralServer" devicetype="remote management" method="probed" conf="10"><cpe>cpe:/a:zohocorp:manageengine_desktop_central</cpe></service></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Sun GlassFish Open Source Edition" version=" 4.0" method="probed" conf="10"><cpe>cpe:/a:sun:glassfish_server:_4.0_::open_source</cpe></service></port>
+<port protocol="tcp" portid="8181"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="intermapper" servicefp="SF-Port8181-TCP:V=7.92%T=SSL%I=7%D=3/10%Time=622A7266%P=x86_64-pc-linux-gnu%r(RTSPRequest,76,&quot;HTTP/1\.1\x20505\x20HTTP\x20Version\x20Not\x20Supported\r\nDate:\x20Fri,\x2011\x20Mar\x202022\x2000:49:26\x20GMT\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n&quot;);" tunnel="ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8282"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Apache Tomcat/Coyote JSP engine" version="1.1" method="probed" conf="10"><cpe>cpe:/a:apache:coyote_http_connector:1.1</cpe></service></port>
+<port protocol="tcp" portid="8383"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="https-alt" tunnel="ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8444"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="desktop-central" product="ManageEngine Desktop Central DesktopCentralServer" devicetype="remote management" method="probed" conf="10"><cpe>cpe:/a:zohocorp:manageengine_desktop_central</cpe></service></port>
+<port protocol="tcp" portid="8484"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Jetty" version="winstone-2.8" method="probed" conf="10"><cpe>cpe:/a:mortbay:jetty:winstone-2.8</cpe></service></port>
+<port protocol="tcp" portid="8585"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Apache httpd" version="2.2.21" extrainfo="(Win64) PHP/5.3.10 DAV/2" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.21</cpe></service></port>
+<port protocol="tcp" portid="8686"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="java-rmi" product="Java RMI" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="9200"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="wap-wsp" servicefp="SF-Port9200-TCP:V=7.92%I=7%D=3/10%Time=622A7255%P=x86_64-pc-linux-gnu%r(GetRequest,18F,&quot;HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20application/json;\x20charset=UTF-8\r\nContent-Length:\x20312\r\n\r\n{\r\n\x20\x20\&quot;status\&quot;\x20:\x20200,\r\n\x20\x20\&quot;name\&quot;\x20:\x20\&quot;Miss\x20America\&quot;,\r\n\x20\x20\&quot;version\&quot;\x20:\x20{\r\n\x20\x20\x20\x20\&quot;number\&quot;\x20:\x20\&quot;1\.1\.1\&quot;,\r\n\x20\x20\x20\x20\&quot;build_hash\&quot;\x20:\x20\&quot;f1585f096d3f3985e73456debdc1a0745f512bbc\&quot;,\r\n\x20\x20\x20\x20\&quot;build_timestamp\&quot;\x20:\x20\&quot;2014-04-16T14:27:12Z\&quot;,\r\n\x20\x20\x20\x20\&quot;build_snapshot\&quot;\x20:\x20false,\r\n\x20\x20\x20\x20\&quot;lucene_version\&quot;\x20:\x20\&quot;4\.7\&quot;\r\n\x20\x20},\r\n\x20\x20\&quot;tagline\&quot;\x20:\x20\&quot;You\x20Know,\x20for\x20Search\&quot;\r\n}\n&quot;)%r(HTTPOptions,4F,&quot;HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20text/plain;\x20charset=UTF-8\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RTSPRequest,4F,&quot;HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20text/plain;\x20charset=UTF-8\r\nContent-Length:\x200\r\n\r\n&quot;)%r(FourOhFourRequest,A9,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=UTF-8\r\nContent-Length:\x2080\r\n\r\nNo\x20handler\x20found\x20for\x20uri\x20\[/nice%20ports%2C/Tri%6Eity\.txt%2ebak\]\x20and\x20method\x20\[GET\]&quot;)%r(SIPOptions,4F,&quot;HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20text/plain;\x20charset=UTF-8\r\nContent-Length:\x200\r\n\r\n&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9300"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="vrace" method="table" conf="3"/></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49153"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49157"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="java-rmi" product="Java RMI" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="49158"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="49179"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49180"><state state="open" reason="syn-ack" reason_ttl="128"/></port>
+<port protocol="tcp" portid="49183"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49208"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49259"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ssh" product="Apache Mina sshd" version="0.8.0" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:apache:sshd:0.8.0</cpe></service></port>
+<port protocol="tcp" portid="49260"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="jenkins-listener" product="Jenkins TcpSlaveAgentListener" method="probed" conf="10"><cpe>cpe:/a:cloudbees:jenkins</cpe></service></port>
+</ports>
+<times srtt="118" rttvar="96" to="100000"/>
+</host>
+<runstats><finished time="1646949123" timestr="Thu Mar 10 16:52:03 2022" summary="Nmap done at Thu Mar 10 16:52:03 2022; 1 IP address (1 host up) scanned in 233.01 seconds" elapsed="233.01" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
